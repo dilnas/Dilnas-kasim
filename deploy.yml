@@ -1,7 +1,7 @@
-name: Deploy Static Website
+name: Deploy Website
 on:
   push:
-    branches: ["main"] # Or "master" depending on your branch name
+    branches: ["main"] # Ensure this matches your branch name (main or master)
 
 permissions:
   contents: read
@@ -12,17 +12,17 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps: deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # Change this if your HTML files are in a subfolder
+          path: '.' # Uploads the root directory containing index.html
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
