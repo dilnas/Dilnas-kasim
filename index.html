@@ -3,64 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilnas Kasim | Professional Portfolio</title>
+    <title>Dilnas Kasim | Electrical & Calibration Technician</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        :root { --primary: #38bdf8; --bg: #0f172a; --card: #1e293b; --text: #f1f5f9; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
-        nav { display: flex; justify-content: space-between; padding: 20px 8%; background: rgba(15, 23, 42, 0.95); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.1); }
-        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%); padding: 20px; }
-        .hero h1 { font-size: 4rem; margin-bottom: 10px; }
-        .type-wrap { font-size: 1.8rem; color: var(--primary); height: 40px; font-weight: bold; }
-        .section { padding: 100px 8%; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-        .card { background: var(--card); padding: 30px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); transition: 0.4s; }
-        .card:hover { transform: translateY(-10px); border-color: var(--primary); }
-        .card h3 { color: var(--primary); margin-bottom: 10px; }
-        .btn { padding: 12px 35px; background: var(--primary); color: #0f172a; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 25px; transition: 0.3s; display: inline-block; }
+        .hero-gradient { background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%); }
+        .accent-color { color: #f39c12; }
+        .accent-bg { background-color: #f39c12; }
     </style>
 </head>
-<body>
-    <nav><div style="font-size:1.5rem; font-weight:bold;">DILNAS<span style="color:var(--primary)">KASIM</span></div></nav>
+<body class="bg-gray-50 font-sans text-gray-800">
 
-    <header class="hero">
-        <h1 data-aos="fade-down">Dilnas Kasim</h1>
-        <div class="type-wrap"><span id="typed"></span></div>
-        <p data-aos="fade-up" style="max-width:600px; opacity:0.8;">Electrical/Calibration Technician with 3+ years of experience in industrial systems[cite: 7].</p>
-        <a href="mailto:dilnaskasim1@gmail.com" class="btn" data-aos="fade-up">Contact Me</a>
-    </header>
+    <nav class="p-6 flex justify-between items-center bg-white shadow-sm sticky top-0 z-50">
+        <h1 class="text-xl font-bold tracking-widest">DILNAS KASIM</h1>
+        <div class="space-x-6">
+            <a href="#about" class="hover:text-yellow-600">About</a>
+            <a href="#experience" class="hover:text-yellow-600">Experience</a>
+            <a href="#projects" class="hover:text-yellow-600">Projects</a>
+            <a href="mailto:dilnaskasim1@gmail.com" class="accent-bg text-white px-4 py-2 rounded">Contact Me</a>
+        </div>
+    </nav>
 
-    <section class="section">
-        <h2 style="text-align:center; margin-bottom:40px; font-size:2.5rem;" data-aos="fade-up">Experience</h2>
-        <div class="grid">
-            <div class="card" data-aos="fade-up">
-                <h3>Production Technician</h3>
-                <p><strong>Saveto KSA</strong> [cite: 18]</p>
-                <p style="font-size:0.9rem; margin-top:10px;">• Operated robotic systems [cite: 22]<br>• SCADA system monitoring [cite: 23]<br>• ISO 9001 compliance [cite: 28]</p>
+    <section class="hero-gradient text-white py-24 px-10 flex flex-col items-center text-center">
+        <img src="profile.jpg" alt="Dilnas Kasim" class="w-40 h-40 rounded-full border-4 border-yellow-500 mb-6 object-cover shadow-xl">
+        <h2 class="text-5xl font-extrabold mb-4">Electrical & Calibration Technician</h2>
+        [cite_start]<p class="text-xl text-gray-300 max-w-2xl">3+ years of experience in testing, calibration, and maintenance of industrial electrical systems and SCADA automation[cite: 7].</p>
+    </section>
+
+    <section id="about" class="py-20 px-10 max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold mb-10 text-center">Skills & Expertise</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500">
+                <i class="fas fa-microchip text-3xl mb-4 accent-color"></i>
+                <h4 class="font-bold mb-2">Automation & SCADA</h4>
+                [cite_start]<p class="text-sm text-gray-600">Operating and programming robotic systems and SCADA for plant operations[cite: 22, 23].</p>
             </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="100">
-                <h3>Quality Assurance</h3>
-                <p><strong>OEN India Ltd</strong> [cite: 43]</p>
-                <p style="font-size:0.9rem; margin-top:10px;">• Aerospace testing (MIL) [cite: 47]<br>• Instrument calibration [cite: 50]<br>• Test equipment programming [cite: 49]</p>
+            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500">
+                <i class="fas fa-tools text-3xl mb-4 accent-color"></i>
+                <h4 class="font-bold mb-2">Testing & Calibration</h4>
+                [cite_start]<p class="text-sm text-gray-600">Proficient with Oscilloscopes, Multimeters, and Dielectric/Insulation testers[cite: 8, 50].</p>
             </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="200">
-                <h3>Stencil Designer</h3>
-                <p><strong>SFO Technologies</strong> [cite: 31]</p>
-                <p style="font-size:0.9rem; margin-top:10px;">• PCB stencil design [cite: 37]<br>• DFM for SMT [cite: 39]<br>• Altium & CAM350 [cite: 40]</p>
+            <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500">
+                <i class="fas fa-shield-alt text-3xl mb-4 accent-color"></i>
+                <h4 class="font-bold mb-2">Quality & Compliance</h4>
+                [cite_start]<p class="text-sm text-gray-600">Expertise in ISO 9001, IATF 16949, and MIL standards for aerospace[cite: 13, 47].</p>
             </div>
         </div>
     </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-        new Typed('#typed', {
-            strings: ['Electrical Technician', 'SCADA Programmer', 'Calibration Specialist'],
-            typeSpeed: 50, backSpeed: 30, loop: true
-        });
-    </script>
+    <section id="experience" class="bg-gray-100 py-20 px-10">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold mb-12 text-center">Work History</h3>
+            
+            <div class="mb-10 border-l-4 border-yellow-500 pl-6">
+                <span class="text-yellow-600 font-bold">2022 - Present</span>
+                <h4 class="text-xl font-bold">Production Technician | Saveto KSA</h4>
+                [cite_start]<p class="text-gray-600 italic">Dammam, Saudi Arabia [cite: 18-20]</p>
+                <ul class="list-disc ml-5 mt-2 text-gray-700">
+                    [cite_start]<li>Operated robotic systems for automated bag layering[cite: 22].</li>
+                    [cite_start]<li>Monitored real-time SCADA data to troubleshoot plant issues[cite: 24].</li>
+                </ul>
+            </div>
+
+            <div class="mb-10 border-l-4 border-gray-300 pl-6">
+                <span class="text-gray-500 font-bold">2022 (Feb - July)</span>
+                <h4 class="text-xl font-bold">PCB Stencil Designer | SFO Technologies</h4>
+                [cite_start]<p class="text-gray-700">Designing high-precision stencils for SMT production using Altium Designer [cite: 32-40].</p>
+            </div>
+
+            <div class="mb-10 border-l-4 border-gray-300 pl-6">
+                <span class="text-gray-500 font-bold">2021 - 2022</span>
+                <h4 class="text-xl font-bold">Quality Assurance Technician | OEN India Ltd</h4>
+                [cite_start]<p class="text-gray-700">Inspection and testing of electro-mechanical components for Aerospace applications [cite: 44-47].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-10 max-w-6xl mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-12">Featured Projects</h3>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                <img src="iot.jpg" alt="IoT Project" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white p-4">
+                    <h5 class="text-xl font-bold">Smart Attendance System</h5>
+                    [cite_start]<p>IoT-based automated tracking[cite: 61].</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-lg">
+                <img src="capacitor.jpg" alt="Energy Project" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white p-4">
+                    <h5 class="text-xl font-bold">Super Capacitor Project</h5>
+                    [cite_start]<p>Advanced energy storage solutions[cite: 62].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 px-10 text-center">
+        <h3 class="text-2xl font-bold mb-4">Let's Connect</h3>
+        <p class="mb-6">Dammam, Saudi Arabia</p>
+        <div class="flex justify-center space-x-6 text-2xl mb-8">
+            <a href="https://www.linkedin.com/in/dilnas-kasim-0a215a143" class="hover:text-yellow-500"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:dilnaskasim1@gmail.com" class="hover:text-yellow-500"><i class="fas fa-envelope"></i></a>
+            <a href="https://dilnas.github.io/Dilnas-kasim/" class="hover:text-yellow-500"><i class="fas fa-globe"></i></a>
+        </div>
+        <p class="text-gray-500 text-sm">© 2024 Dilnas Kasim | [cite_start]Diploma in Electrical & Electronics [cite: 56]</p>
+    </footer>
+
 </body>
 </html>
