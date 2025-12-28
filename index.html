@@ -3,140 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilnas Kasim | Electrical & Calibration Specialist</title>
+    <title>Dilnas Kasim | Professional Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        :root {
-            --primary: #38bdf8;
-            --bg: #0f172a;
-            --card: #1e293b;
-            --text: #f1f5f9;
-        }
+        :root { --primary: #38bdf8; --bg: #0f172a; --card: #1e293b; --text: #f1f5f9; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            background-color: var(--bg); 
-            color: var(--text); 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
-        /* Navbar */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 8%;
-            background: rgba(15, 23, 42, 0.9);
-            backdrop-filter: blur(10px);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        .logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
-        .logo span { color: var(--primary); }
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
-            padding: 20px;
-        }
+        body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
+        nav { display: flex; justify-content: space-between; padding: 20px 8%; background: rgba(15, 23, 42, 0.95); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%); padding: 20px; }
         .hero h1 { font-size: 4rem; margin-bottom: 10px; }
-        .type-wrap { font-size: 1.8rem; color: var(--primary); height: 40px; }
-        .hero p { max-width: 600px; margin-top: 20px; opacity: 0.8; }
-        /* Experience Cards */
+        .type-wrap { font-size: 1.8rem; color: var(--primary); height: 40px; font-weight: bold; }
         .section { padding: 100px 8%; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 40px; }
-        .card {
-            background: var(--card);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(255,255,255,0.05);
-            transition: 0.4s;
-            position: relative;
-        }
-        .card:hover { transform: translateY(-10px); border-color: var(--primary); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { background: var(--card); padding: 30px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); transition: 0.4s; }
+        .card:hover { transform: translateY(-10px); border-color: var(--primary); }
         .card h3 { color: var(--primary); margin-bottom: 10px; }
-        .date { font-size: 0.85rem; opacity: 0.6; display: block; margin-bottom: 15px; }
-        /* Button */
-        .btn {
-            margin-top: 30px;
-            padding: 12px 35px;
-            background: var(--primary);
-            color: #0f172a;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .btn:hover { opacity: 0.9; transform: scale(1.05); box-shadow: 0 0 20px var(--primary); }
+        .btn { padding: 12px 35px; background: var(--primary); color: #0f172a; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 25px; transition: 0.3s; display: inline-block; }
     </style>
 </head>
 <body>
+    <nav><div style="font-size:1.5rem; font-weight:bold;">DILNAS<span style="color:var(--primary)">KASIM</span></div></nav>
 
-    <nav>
-        <div class="logo">DILNAS<span>KASIM</span></div>
-    </nav>
-
-    <section class="hero">
-        <h1 data-aos="zoom-out">Dilnas Kasim</h1>
+    <header class="hero">
+        <h1 data-aos="fade-down">Dilnas Kasim</h1>
         <div class="type-wrap"><span id="typed"></span></div>
-        [cite_start]<p data-aos="fade-up">Electrical/Calibration Technician with 3+ years of experience in testing, calibration, and maintenance of industrial systems[cite: 7].</p>
+        <p data-aos="fade-up" style="max-width:600px; opacity:0.8;">Electrical/Calibration Technician with 3+ years of experience in industrial systems[cite: 7].</p>
         <a href="mailto:dilnaskasim1@gmail.com" class="btn" data-aos="fade-up">Contact Me</a>
-    </section>
+    </header>
 
     <section class="section">
-        <h2 data-aos="fade-right" style="font-size: 2.5rem; text-align: center;">Professional Journey</h2>
+        <h2 style="text-align:center; margin-bottom:40px; font-size:2.5rem;" data-aos="fade-up">Experience</h2>
         <div class="grid">
             <div class="card" data-aos="fade-up">
-                [cite_start]<span class="date">Nov 2022 - Present [cite: 20]</span>
                 <h3>Production Technician</h3>
-                [cite_start]<p><strong>Saveto KSA [cite: 18]</strong></p>
-                <ul style="margin-top:10px; font-size:0.9rem; padding-left:15px;">
-                    [cite_start]<li>Operate and program robotic systems for automation[cite: 22].</li>
-                    [cite_start]<li>Monitor SCADA systems for plant efficiency[cite: 23].</li>
-                    [cite_start]<li>ISO 9001 & IATF 16949 standards adherence[cite: 28].</li>
-                </ul>
+                <p><strong>Saveto KSA</strong> [cite: 18]</p>
+                <p style="font-size:0.9rem; margin-top:10px;">• Operated robotic systems [cite: 22]<br>• SCADA system monitoring [cite: 23]<br>• ISO 9001 compliance [cite: 28]</p>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="100">
-                [cite_start]<span class="date">Jan 2021 - Feb 2022 [cite: 45]</span>
-                <h3>Quality Assurance Technician</h3>
-                [cite_start]<p><strong>OEN India Ltd [cite: 43]</strong></p>
-                <ul style="margin-top:10px; font-size:0.9rem; padding-left:15px;">
-                    [cite_start]<li>Aerospace product testing per MIL standards[cite: 47].</li>
-                    [cite_start]<li>Calibration of Multimeters & Oscilloscopes[cite: 50].</li>
-                    [cite_start]<li>Programmed Climatic & Vibration test equipment[cite: 49].</li>
-                </ul>
+                <h3>Quality Assurance</h3>
+                <p><strong>OEN India Ltd</strong> [cite: 43]</p>
+                <p style="font-size:0.9rem; margin-top:10px;">• Aerospace testing (MIL) [cite: 47]<br>• Instrument calibration [cite: 50]<br>• Test equipment programming [cite: 49]</p>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="200">
-                [cite_start]<span class="date">Feb 2022 - July 2022 [cite: 33]</span>
-                <h3>PCB Stencil Designer</h3>
-                [cite_start]<p><strong>SFO Technologies [cite: 31]</strong></p>
-                <ul style="margin-top:10px; font-size:0.9rem; padding-left:15px;">
-                    [cite_start]<li>Designed solder paste stencils from Gerber files[cite: 37].</li>
-                    [cite_start]<li>DFM checks for SMT processes[cite: 39].</li>
-                    [cite_start]<li>Used Altium Designer and CAM350[cite: 40].</li>
-                </ul>
+                <h3>Stencil Designer</h3>
+                <p><strong>SFO Technologies</strong> [cite: 31]</p>
+                <p style="font-size:0.9rem; margin-top:10px;">• PCB stencil design [cite: 37]<br>• DFM for SMT [cite: 39]<br>• Altium & CAM350 [cite: 40]</p>
             </div>
         </div>
     </section>
-
-    <footer style="text-align: center; padding: 40px; opacity: 0.5; font-size: 0.8rem;">
-        &copy; 2025 Dilnas Kasim | Built with Professional GitHub Actions
-    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
-        var typed = new Typed('#typed', {
-            strings: ['Electrical Technician', 'SCADA Programmer', 'Calibration Specialist', 'Automation Expert'],
+        new Typed('#typed', {
+            strings: ['Electrical Technician', 'SCADA Programmer', 'Calibration Specialist'],
             typeSpeed: 50, backSpeed: 30, loop: true
         });
     </script>
