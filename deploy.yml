@@ -1,7 +1,7 @@
 name: Deploy Website
 on:
   push:
-    branches: ["main"] # Ensure this matches your branch name (main or master)
+    branches: ["main"] # Double check if your branch is named 'main' or 'master'
 
 permissions:
   contents: read
@@ -22,7 +22,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # Uploads the root directory containing index.html
+          path: '.' # This points to where your index.html is
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
