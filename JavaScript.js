@@ -1,40 +1,29 @@
-// Initialize Animate On Scroll
-AOS.init({
-    duration: 1000,
-    once: true
-});
+// Typing effect
+const textElement = document.getElementById("typing-text");
+const phrases = ["Electrical Technician", "Calibration Specialist", "SCADA Programmer"];
+let i = 0, j = 0;
 
-// Typing Effect for Hero Section
-var typed = new Typed(".typing", {
-    strings: [
-        "Electrical Technician [cite: 7]",
-        "Calibration Specialist [cite: 7]",
-        "SCADA Programmer [cite: 8]",
-        "Automation Expert [cite: 58]"
-    ],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
-
-// Smooth Scroll for Navigation
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Change Navbar background on scroll
-window.addEventListener('scroll', function() {
-    const nav = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        nav.style.background = '#0f172a';
-        nav.style.boxShadow = '0 2px 10px rgba(0,0,0,0.3)';
-    } else {
-        nav.style.background = 'transparent';
-        nav.style.boxShadow = 'none';
+function type() {
+    if (i < phrases.length) {
+        if (j < phrases[i].length) {
+            textElement.innerHTML += phrases[i].charAt(j);
+            j++;
+            setTimeout(type, 100);
+        } else {
+            setTimeout(erase, 2000);
+        }
     }
-});
+}
+
+function erase() {
+    if (j > 0) {
+        textElement.innerHTML = phrases[i].substring(0, j - 1);
+        j--;
+        setTimeout(erase, 50);
+    } else {
+        i = (i + 1) % phrases.length;
+        setTimeout(type, 500);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", type);
